@@ -56,6 +56,8 @@ The NAND gate combines outputs to control the final LED.
 
 <img src="https://github.com/user-attachments/assets/3daacb60-1ff8-4983-b1aa-2d64ca3f7a41" width="600" alt="Case 1: Dark and Cold" />
 
+
+
 **Case 2: Bright and Warm (Best Case)**
 
 <img src="https://github.com/user-attachments/assets/a67d3e14-e22c-474d-87e0-79d8b2700535" width="600" alt="Case 2: Bright and Warm" />
@@ -67,6 +69,8 @@ The NAND gate combines outputs to control the final LED.
 **Worst Case (Dark and Cold):**  
 
 <img src="https://github.com/user-attachments/assets/72d0fac1-5c99-44b5-8bc2-2cf6aed9d2e0" width="700" alt="LTspice Simulation Worst Case" />
+
+
 
 **Best Case (Bright and Warm):**  
 
