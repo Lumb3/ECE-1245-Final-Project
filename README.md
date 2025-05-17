@@ -25,7 +25,7 @@ This project involves building a **ThermoLight-Activated LED System** using two 
   - Op-Amps (Comparators)
   - Resistors
   - LEDs
-  - Power supply (3.3V for safeness)
+  - Power supply (3.3V)
 
 ### Getting Started
 
