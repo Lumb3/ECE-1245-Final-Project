@@ -41,7 +41,7 @@ Two cases are analyzed:
 
 #### Case 1: Dark and Cold (Worst Case)  
 
-The photoresistor's resistance increases in darkness, lowering the voltage at the Op-Amp input. The comparator outputs 5V if the sensor voltage is below the reference voltage (**V⁻**), turning the LED on. Similar logic applies to the thermistor.
+The photoresistor's resistance increases in darkness, lowering the voltage at the Op-Amp input. The comparator outputs 5V if the sensor voltage is below the reference voltage (**V⁻**), turning the LED on. Similar logic applies to the thermistor.  
 
 Ideal comparator output:  
 - If V⁺ > V⁻ → Output = 5V  
@@ -52,6 +52,7 @@ The NAND gate combines outputs to control the final LED.
 ---
 
 ### 📷 Images
+(Note that V⁺ -> Vp, V⁻ -> Vn)
 
 **Case 1: Dark and Cold**  
 
