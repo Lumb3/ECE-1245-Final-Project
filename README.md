@@ -1,12 +1,12 @@
-# ECE-1245 Final Project
+# 🔧 ECE-1245 Final Project
 
-## Project Title: ThermoLight-Activated LED System
+## 💡 Project Title: ThermoLight-Activated LED System
 
-### Description
+### 📘 Description
 
 This project involves building a **ThermoLight-Activated LED System** using two comparator Op-Amps, a thermistor (temperature sensor), and a photoresistor (light sensor). The system is designed to control LED illumination based on environmental temperature and light intensity.
 
-### Key Features
+### 🔑 Key Features
 
 - Circuit design using two comparator Op-Amps
 - Integration of a thermistor and photoresistor for environmental sensing
@@ -16,7 +16,7 @@ This project involves building a **ThermoLight-Activated LED System** using two 
   - Calculation of the inverting input voltage (**V⁻**) for Op-Amps
   - Selection of optimal resistor values for LED operation
 
-### Tools Used
+### 🛠️ Tools Used
 
 - **LTspice** simulation platform for initial planning and testing
 - Basic electronic components including:
@@ -27,11 +27,11 @@ This project involves building a **ThermoLight-Activated LED System** using two 
   - LEDs
   - Power supply (3.3V)
 
-### Getting Started
+### 🚀 Getting Started
 
 
 
+---
 
-
-
-*Created for ECE-1245 Final Project.* 2025/05/17
+🗓️ *Created for ECE-1245 Final Project.*  
+📅 **Date:** 2025/05/17
