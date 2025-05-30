@@ -65,16 +65,9 @@ The NAND gate combines outputs to control the final LED.
 You can download LTspice from the official Analog Devices page:  
 [Download LTspice Simulator](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 
+<img width="1354" alt="Screenshot 2025-05-30 at 15 45 15" src="https://github.com/user-attachments/assets/528c2254-a97c-41c2-aee3-84eee54c8d0e" />
 
-**Worst Case (Dark and Cold):**  
 
-<img src="https://github.com/user-attachments/assets/72d0fac1-5c99-44b5-8bc2-2cf6aed9d2e0" width="600" alt="LTspice Simulation Worst Case" /><br/>
-
-**Best Case (Bright and Warm):**  
-
-<img src="https://github.com/user-attachments/assets/344780c3-9fb3-46f9-9d56-d7d71f0719e2" width="600" alt="LTspice Simulation Best Case" /><br/>
-
----
 
 🗓️ *Created for ECE-1245 Final Project*  
 📅 **Date:** 2025/05/17
