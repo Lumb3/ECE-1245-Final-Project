@@ -43,7 +43,7 @@ This project showcases a **ThermoLight-Activated LED System** using two comparat
 
 | Case 1: **Dark and Cold** | Case 2: **Bright and Warm (Best Case)** |
 |---------------------------|-----------------------------------------|
-| <img src="https://github.com/user-attachments/assets/3daacb60-1ff8-4983-b1aa-2d64ca3f7a41" width="400" alt="Case 1: Dark and Cold" /> | <img src="https://github.com/user-attachments/assets/a67d3e14-e22c-474d-87e0-79d8b2700535" width="400" alt="Case 2: Bright and Warm" /> |
+| <img src="https://github.com/user-attachments/assets/bc770578-7713-4740-969c-a72ab7f5a08d" width="400" alt="Case 1: Dark and Cold" /> | <img src="https://github.com/user-attachments/assets/83c8aac8-4f73-4e1b-b9ea-aea87b87dfd3" width="400" alt="Case 2: Bright and Warm" /> |
 
 ---
 
