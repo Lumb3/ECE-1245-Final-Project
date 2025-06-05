@@ -29,11 +29,12 @@ This project showcases a **ThermoLight-Activated LED System** using two comparat
 - `If V⁺ > V⁻ → Output = 5V (LED ON)`  
 - `If V⁺ < V⁻ → Output = 0V (LED OFF)`
 
-#### Case 1: **Dark and Cold (Worst Case)**  
-- The **photoresistor's resistance increases in the dark**, lowering the input voltage to the Op-Amp.
-- The **thermistor's resistance increases when cold**, also lowering its input voltage.
-- When both sensor voltages drop below their respective reference voltages, both Red and White LEDs turn on.
-- The Blue LED is activated through the NAND gates when **both** of the above conditions are met.
+#### Explanation:
+Both the photoresistor and thermistor are connected to comparator Op-Amps through voltage dividers.  
+- The **photoresistor circuit** uses a reference voltage (**V⁻**) of **2.2V**. If the voltage at **V⁺** (from the voltage divider) drops below this in the dark, the output is 5V, turning on the red LED.  
+- The **thermistor circuit** uses a reference voltage (**V⁻**) of **2.0V**. In cold conditions, the thermistor’s resistance rises, dropping the voltage at **V⁺**, causing the output to go high and turning on the white LED.
+
+When both conditions are true (dark and cold), the red and white LEDs are both ON. Their outputs are fed into two NAND gates, which behave as an AND gate followed by a NOT gate — lighting up the **blue LED** only in the worst-case scenario.
 
 ---
 
@@ -54,6 +55,11 @@ To simulate the circuit behavior, use **LTspice** from Analog Devices:
 🔗 [Download LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 
 ![LTspice Simulation](https://github.com/user-attachments/assets/528c2254-a97c-41c2-aee3-84eee54c8d0e)
+
+---
+
+🎥 **Circuit in Action:**  
+[Watch the YouTube Demo](https://www.youtube.com/watch?v=bgkjT5ubVag)
 
 ---
 
