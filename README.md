@@ -6,68 +6,56 @@
 
 ### 📘 Description
 
-This project implements a **ThermoLight-Activated LED System** using two comparator Op-Amps, a thermistor (temperature sensor), and a photoresistor (light sensor). The final LED turns **ON** only when it is **too dark** or **too cold**. When conditions are bright and warm, the LED stays **OFF**.
+This project showcases a **ThermoLight-Activated LED System** using two comparator Op-Amps, a thermistor (temperature sensor), and a photoresistor (light sensor). It is designed to detect environmental conditions (light and temperature) and respond using LEDs.
 
 ---
 
 ### 🔑 Key Features
 
-- Uses a **thermistor** and **photoresistor** to monitor environment  
-- **Three LEDs:**  
-  - Two show individual sensor states  
-  - One final LED controlled by a **NAND gate** lights up if either condition is bad  
-- Circuit analysis with node-voltage method and optimal resistor selection  
-- Comparator Op-Amps output 0V or 5V depending on sensor voltages  
+- **Red LED (Light Sensor - Photoresistor):**  
+  Turns on in the dark to indicate a lighting issue.
 
----
+- **White LED (Temperature Sensor - Thermistor):**  
+  Turns on in cold conditions to indicate a temperature issue.
 
-### 🛠️ Tools Used
-
-- **LTspice** for simulation and validation  
-- Hardware components:  
-  - Thermistor  
-  - Photoresistor  
-  - 2 Comparator Op-Amps  
-  - 5 Resistors  
-  - 3 LEDs  
-  - NAND Gate  
-  - 3.3V Power Supply  
+- **Blue LED (Combined Condition - NAND Logic):**  
+  Connected to the outputs of the Red and White LEDs through two NAND gates, which replicate AND logic. This LED turns on *only* when **both** Red and White LEDs are on (i.e., dark **and** cold conditions — worst-case scenario).
 
 ---
 
 ### 🚀 System Logic
 
-Two cases are analyzed:
+#### Comparator Logic:
+- `If V⁺ > V⁻ → Output = 5V (LED ON)`  
+- `If V⁺ < V⁻ → Output = 0V (LED OFF)`
 
-#### Case 1: Dark and Cold (Worst Case)  
-
-The photoresistor's resistance increases in darkness, lowering the voltage at the Op-Amp input. The comparator outputs 5V if the sensor voltage is below the reference voltage (**V⁻**), turning the LED on. Similar logic applies to the thermistor.  
-
-Ideal comparator output:  
-- If V⁺ > V⁻ → Output = 5V  
-- If V⁺ < V⁻ → Output = 0V  
-
-The NAND gate combines outputs to control the final LED.
+#### Case 1: **Dark and Cold (Worst Case)**  
+- The **photoresistor's resistance increases in the dark**, lowering the input voltage to the Op-Amp.
+- The **thermistor's resistance increases when cold**, also lowering its input voltage.
+- When both sensor voltages drop below their respective reference voltages, both Red and White LEDs turn on.
+- The Blue LED is activated through the NAND gates when **both** of the above conditions are met.
 
 ---
 
-### 📷 Images  
-(Note that V⁺ -> Vp, V⁻ -> Vn)
+### 📷 Images
 
-| **Case 1: Dark and Cold** | **Case 2: Bright and Warm (Best Case)** |
+> *(Note: V⁺ = Vp, V⁻ = Vn in diagrams)*
+
+| Case 1: **Dark and Cold** | Case 2: **Bright and Warm (Best Case)** |
 |---------------------------|-----------------------------------------|
-| <img src="https://github.com/user-attachments/assets/3daacb60-1ff8-4983-b1aa-2d64ca3f7a41" width="400" alt="Case 1: Dark and Cold" /><br> | <img src="https://github.com/user-attachments/assets/a67d3e14-e22c-474d-87e0-79d8b2700535" width="400" alt="Case 2: Bright and Warm" /><br> |
+| <img src="https://github.com/user-attachments/assets/3daacb60-1ff8-4983-b1aa-2d64ca3f7a41" width="400" alt="Case 1: Dark and Cold" /> | <img src="https://github.com/user-attachments/assets/a67d3e14-e22c-474d-87e0-79d8b2700535" width="400" alt="Case 2: Bright and Warm" /> |
 
 ---
 
 ### 🧪 LTspice Simulation
 
-You can download LTspice from the official Analog Devices page:  
-[Download LTspice Simulator](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
+To simulate the circuit behavior, use **LTspice** from Analog Devices:
 
-<img width="1354" alt="Screenshot 2025-05-30 at 15 45 15" src="https://github.com/user-attachments/assets/528c2254-a97c-41c2-aee3-84eee54c8d0e" />
+🔗 [Download LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 
+![LTspice Simulation](https://github.com/user-attachments/assets/528c2254-a97c-41c2-aee3-84eee54c8d0e)
 
+---
 
 🗓️ *Created for ECE-1245 Final Project*  
-📅 **Date:** 2025/05/17
+📅 **Date:** 2025-05-17
