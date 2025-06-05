@@ -36,6 +36,7 @@ Both the photoresistor and thermistor are connected to comparator Op-Amps throug
 
 When both conditions are true (dark and cold), the red and white LEDs are both ON. Their outputs are fed into two NAND gates, which behave as an AND gate followed by a NOT gate — lighting up the **blue LED** only in the worst-case scenario.
 
+📝 *Refer to the 1. Preliminary, 2. Critical, and 3. Final design reports for more details.*
 ---
 
 ### 📷 Images
